@@ -62,7 +62,12 @@ const Dashboard: React.FC = () => {
       // Load Foods from API
       const { data } = await api.get('/foods');
 
-      setFoods(data);
+      const foodsformattedPrice = data.map((foodPlate: Food) => ({
+        ...foodPlate,
+        formattedPrice: formatValue(foodPlate.price),
+      }));
+
+      setFoods(foodsformattedPrice);
     }
 
     loadFoods();
