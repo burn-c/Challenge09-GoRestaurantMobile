@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useEffect, useState, useCallback } from 'react';
 import { Image, ScrollView } from 'react-native';
 
 import Icon from 'react-native-vector-icons/Feather';
@@ -51,11 +51,15 @@ const Dashboard: React.FC = () => {
   >();
   const [searchValue, setSearchValue] = useState('');
 
-  const navigation = useNavigation();
+  const { navigate } = useNavigation();
 
-  async function handleNavigate(id: number): Promise<void> {
-    // Navigate do ProductDetails page
-  }
+  const handleNavigate = useCallback(
+    (id: number) => {
+      // Navigate do ProductDetails page
+      navigate('FoodDetails', { id });
+    },
+    [navigate],
+  );
 
   useEffect(() => {
     async function loadFoods(): Promise<void> {
