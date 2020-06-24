@@ -72,25 +72,69 @@ const FoodDetails: React.FC = () => {
   const routeParams = route.params as Params;
 
   useEffect(() => {
-    api.get(`/foods/${routeParams.id}`).then(response => {
-      setFood(response.data);
-    });
-  }, [routeParams.id]);
+    async function loadFood(): Promise<void> {
+      const { data } = await api.get<Food>(`/foods/${routeParams.id}`);
+
+      const foodFormattedPrice = {
+        ...data,
+        formattedPrice: formatValue(data.price),
+      };
+      setFood(foodFormattedPrice);
+
+      const extraQuantity = data.extras.map((extra: Extra) => ({
+        ...extra,
+        quantity: 0,
+      }));
+      setExtras(extraQuantity);
+    }
+    loadFood();
+  }, [routeParams]);
+
+  // useEffect(() => {
+  //   api.get(`/foods/${routeParams.id}`).then(response => {
+  //     const extraQuantity = response.data.extra.map((extra: Extra) => ({
+  //       ...extra,
+  //       quantity: 0,
+  //     }));
+  //     setFood(response.data);
+  //     setExtras(extraQuantity);
+  //   });
+  // }, [routeParams.id]);
 
   function handleIncrementExtra(id: number): void {
     // Increment extra quantity
+    const incrementExtra = extras.map(extra =>
+      id === extra.id ? { ...extra, quantity: extra.quantity + 1 } : extra,
+    );
+
+    setExtras(incrementExtra);
   }
 
   function handleDecrementExtra(id: number): void {
     // Decrement extra quantity
+    const extraQuantity = extras.find(extra => extra.id === id);
+
+    if (extraQuantity?.quantity <= 0) {
+      return;
+    }
+    const decrementExtra = extras.map(extra =>
+      id === extra.id ? { ...extra, quantity: extra.quantity - 1 } : extra,
+    );
+
+    setExtras(decrementExtra);
   }
 
   function handleIncrementFood(): void {
     // Increment food quantity
+    setFoodQuantity(foodQuantity + 1);
   }
 
   function handleDecrementFood(): void {
     // Decrement food quantity
+    if (foodQuantity <= 0) {
+      return;
+    }
+    setFoodQuantity(foodQuantity - 1);
   }
 
   const toggleFavorite = useCallback(() => {
