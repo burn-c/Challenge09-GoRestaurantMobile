@@ -90,17 +90,6 @@ const FoodDetails: React.FC = () => {
     loadFood();
   }, [routeParams]);
 
-  // useEffect(() => {
-  //   api.get(`/foods/${routeParams.id}`).then(response => {
-  //     const extraQuantity = response.data.extra.map((extra: Extra) => ({
-  //       ...extra,
-  //       quantity: 0,
-  //     }));
-  //     setFood(response.data);
-  //     setExtras(extraQuantity);
-  //   });
-  // }, [routeParams.id]);
-
   function handleIncrementExtra(id: number): void {
     // Increment extra quantity
     const incrementExtra = extras.map(extra =>
@@ -114,7 +103,7 @@ const FoodDetails: React.FC = () => {
     // Decrement extra quantity
     const extraQuantity = extras.find(extra => extra.id === id);
 
-    if (extraQuantity?.quantity <= 0) {
+    if (extraQuantity.quantity <= 0) {
       return;
     }
     const decrementExtra = extras.map(extra =>
@@ -149,7 +138,9 @@ const FoodDetails: React.FC = () => {
       return total + extraValue;
     }, 0);
 
-    const orderTotal = formatValue((food.price + extraTotal) * foodQuantity);
+    const foodTotal = Number(food.price) + extraTotal;
+
+    const orderTotal = formatValue(foodTotal * foodQuantity);
 
     return orderTotal;
   }, [extras, food, foodQuantity]);

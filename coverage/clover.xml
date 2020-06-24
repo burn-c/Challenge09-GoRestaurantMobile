@@ -1,0 +1,228 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<coverage generated="1592969468439" clover="3.2.0">
+  <project timestamp="1592969468439" name="All files">
+    <metrics statements="165" coveredstatements="150" conditionals="19" coveredconditionals="12" methods="52" coveredmethods="37" elements="236" coveredelements="199" complexity="0" loc="165" ncloc="165" packages="7" files="12" classes="12"/>
+    <package name="components.SearchInput">
+      <metrics statements="13" coveredstatements="10" conditionals="7" coveredconditionals="4" methods="4" coveredmethods="2"/>
+      <file name="index.tsx" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/components/SearchInput/index.tsx">
+        <metrics statements="9" coveredstatements="6" conditionals="5" coveredconditionals="3" methods="3" coveredmethods="1"/>
+        <line num="11" count="1" type="cond" truecount="0" falsecount="1"/>
+        <line num="12" count="8" type="stmt"/>
+        <line num="13" count="8" type="stmt"/>
+        <line num="15" count="8" type="stmt"/>
+        <line num="16" count="0" type="stmt"/>
+        <line num="19" count="8" type="stmt"/>
+        <line num="20" count="0" type="stmt"/>
+        <line num="22" count="0" type="stmt"/>
+        <line num="25" count="8" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/components/SearchInput/styles.ts">
+        <metrics statements="4" coveredstatements="4" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="20" count="8" type="cond" truecount="1" falsecount="1"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="33" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Dashboard">
+      <metrics statements="40" coveredstatements="33" conditionals="2" coveredconditionals="1" methods="14" coveredmethods="7"/>
+      <file name="index.tsx" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Dashboard/index.tsx">
+        <metrics statements="23" coveredstatements="16" conditionals="0" coveredconditionals="0" methods="13" coveredmethods="6"/>
+        <line num="46" count="1" type="stmt"/>
+        <line num="47" count="8" type="stmt"/>
+        <line num="48" count="8" type="stmt"/>
+        <line num="49" count="8" type="stmt"/>
+        <line num="52" count="8" type="stmt"/>
+        <line num="54" count="8" type="stmt"/>
+        <line num="56" count="8" type="stmt"/>
+        <line num="59" count="0" type="stmt"/>
+        <line num="64" count="8" type="stmt"/>
+        <line num="67" count="4" type="stmt"/>
+        <line num="69" count="0" type="stmt"/>
+        <line num="74" count="0" type="stmt"/>
+        <line num="77" count="4" type="stmt"/>
+        <line num="80" count="8" type="stmt"/>
+        <line num="83" count="4" type="stmt"/>
+        <line num="85" count="4" type="stmt"/>
+        <line num="88" count="4" type="stmt"/>
+        <line num="95" count="8" type="stmt"/>
+        <line num="103" count="0" type="stmt"/>
+        <line num="124" count="6" type="stmt"/>
+        <line num="127" count="0" type="stmt"/>
+        <line num="144" count="0" type="stmt"/>
+        <line num="146" count="0" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Dashboard/styles.ts">
+        <metrics statements="17" coveredstatements="17" conditionals="2" coveredconditionals="1" methods="1" coveredmethods="1"/>
+        <line num="7" count="1" type="stmt"/>
+        <line num="12" count="1" type="stmt"/>
+        <line num="21" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="58" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="65" count="1" type="stmt"/>
+        <line num="74" count="1" type="stmt"/>
+        <line num="78" count="1" type="stmt"/>
+        <line num="83" count="1" type="stmt"/>
+        <line num="92" count="1" type="stmt"/>
+        <line num="100" count="1" type="stmt"/>
+        <line num="105" count="1" type="stmt"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="123" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Favorites">
+      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Favorites/index.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="39" count="1" type="stmt"/>
+        <line num="42" count="1" type="stmt"/>
+        <line num="45" count="2" type="stmt"/>
+        <line num="54" count="5" type="stmt"/>
+        <line num="56" count="2" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Favorites/styles.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.FoodDetails">
+      <metrics statements="69" coveredstatements="65" conditionals="10" coveredconditionals="7" methods="23" coveredmethods="18"/>
+      <file name="index.tsx" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/FoodDetails/index.tsx">
+        <metrics statements="47" coveredstatements="43" conditionals="10" coveredconditionals="7" methods="23" coveredmethods="18"/>
+        <line num="63" count="1" type="stmt"/>
+        <line num="64" count="30" type="stmt"/>
+        <line num="65" count="30" type="stmt"/>
+        <line num="66" count="30" type="stmt"/>
+        <line num="67" count="30" type="stmt"/>
+        <line num="69" count="30" type="stmt"/>
+        <line num="70" count="30" type="stmt"/>
+        <line num="72" count="30" type="stmt"/>
+        <line num="74" count="30" type="stmt"/>
+        <line num="76" count="6" type="stmt"/>
+        <line num="78" count="6" type="stmt"/>
+        <line num="82" count="6" type="stmt"/>
+        <line num="84" count="11" type="stmt"/>
+        <line num="88" count="6" type="stmt"/>
+        <line num="90" count="6" type="stmt"/>
+        <line num="95" count="4" type="stmt"/>
+        <line num="96" count="6" type="cond" truecount="2" falsecount="0"/>
+        <line num="99" count="4" type="stmt"/>
+        <line num="104" count="1" type="stmt"/>
+        <line num="106" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="107" count="0" type="stmt"/>
+        <line num="109" count="1" type="stmt"/>
+        <line num="110" count="1" type="cond" truecount="1" falsecount="1"/>
+        <line num="113" count="1" type="stmt"/>
+        <line num="118" count="4" type="stmt"/>
+        <line num="123" count="4" type="cond" truecount="2" falsecount="0"/>
+        <line num="124" count="1" type="stmt"/>
+        <line num="126" count="3" type="stmt"/>
+        <line num="129" count="30" type="stmt"/>
+        <line num="133" count="30" type="stmt"/>
+        <line num="136" count="30" type="stmt"/>
+        <line num="137" count="32" type="stmt"/>
+        <line num="138" count="32" type="stmt"/>
+        <line num="141" count="30" type="stmt"/>
+        <line num="143" count="30" type="stmt"/>
+        <line num="145" count="30" type="stmt"/>
+        <line num="153" count="30" type="stmt"/>
+        <line num="154" count="6" type="cond" truecount="1" falsecount="1"/>
+        <line num="158" count="30" type="stmt"/>
+        <line num="160" count="30" type="stmt"/>
+        <line num="162" count="0" type="stmt"/>
+        <line num="166" count="0" type="stmt"/>
+        <line num="172" count="30" type="stmt"/>
+        <line num="197" count="32" type="stmt"/>
+        <line num="204" count="1" type="stmt"/>
+        <line num="214" count="4" type="stmt"/>
+        <line num="246" count="0" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/FoodDetails/styles.ts">
+        <metrics statements="22" coveredstatements="22" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="1" type="stmt"/>
+        <line num="8" count="1" type="stmt"/>
+        <line num="17" count="1" type="stmt"/>
+        <line num="25" count="1" type="stmt"/>
+        <line num="29" count="1" type="stmt"/>
+        <line num="37" count="1" type="stmt"/>
+        <line num="44" count="1" type="stmt"/>
+        <line num="48" count="1" type="stmt"/>
+        <line num="56" count="1" type="stmt"/>
+        <line num="66" count="1" type="stmt"/>
+        <line num="77" count="1" type="stmt"/>
+        <line num="86" count="1" type="stmt"/>
+        <line num="91" count="1" type="stmt"/>
+        <line num="101" count="1" type="stmt"/>
+        <line num="110" count="1" type="stmt"/>
+        <line num="117" count="1" type="stmt"/>
+        <line num="122" count="1" type="stmt"/>
+        <line num="129" count="1" type="stmt"/>
+        <line num="139" count="1" type="stmt"/>
+        <line num="151" count="1" type="stmt"/>
+        <line num="159" count="1" type="stmt"/>
+        <line num="168" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="pages.Orders">
+      <metrics statements="20" coveredstatements="20" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+      <file name="index.tsx" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Orders/index.tsx">
+        <metrics statements="9" coveredstatements="9" conditionals="0" coveredconditionals="0" methods="5" coveredmethods="5"/>
+        <line num="30" count="1" type="stmt"/>
+        <line num="31" count="2" type="stmt"/>
+        <line num="33" count="2" type="stmt"/>
+        <line num="36" count="1" type="stmt"/>
+        <line num="38" count="1" type="stmt"/>
+        <line num="41" count="1" type="stmt"/>
+        <line num="44" count="2" type="stmt"/>
+        <line num="53" count="5" type="stmt"/>
+        <line num="55" count="2" type="stmt"/>
+      </file>
+      <file name="styles.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/pages/Orders/styles.ts">
+        <metrics statements="11" coveredstatements="11" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="13" count="1" type="stmt"/>
+        <line num="18" count="1" type="stmt"/>
+        <line num="26" count="1" type="stmt"/>
+        <line num="35" count="1" type="stmt"/>
+        <line num="40" count="1" type="stmt"/>
+        <line num="47" count="1" type="stmt"/>
+        <line num="58" count="1" type="stmt"/>
+        <line num="67" count="1" type="stmt"/>
+        <line num="72" count="1" type="stmt"/>
+        <line num="81" count="1" type="stmt"/>
+        <line num="93" count="1" type="stmt"/>
+      </file>
+    </package>
+    <package name="services">
+      <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+      <file name="api.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/services/api.ts">
+        <metrics statements="1" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="0" coveredmethods="0"/>
+        <line num="3" count="4" type="stmt"/>
+      </file>
+    </package>
+    <package name="utils">
+      <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+      <file name="formatValue.ts" path="/home/burn/GoStack/2020/challenges-bootcamp/challenge11/src/utils/formatValue.ts">
+        <metrics statements="2" coveredstatements="1" conditionals="0" coveredconditionals="0" methods="1" coveredmethods="0"/>
+        <line num="1" count="1" type="stmt"/>
+        <line num="2" count="0" type="stmt"/>
+      </file>
+    </package>
+  </project>
+</coverage>

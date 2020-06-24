@@ -35,6 +35,7 @@ interface Food {
   price: number;
   thumbnail_url: string;
   formattedPrice: string;
+  category: number;
 }
 
 interface Category {
@@ -71,7 +72,13 @@ const Dashboard: React.FC = () => {
         formattedPrice: formatValue(foodPlate.price),
       }));
 
-      setFoods(foodsformattedPrice);
+      const foodsCategoriesFilter: Food[] = foodsformattedPrice.filter(
+        (food: { category: number | undefined }) =>
+          selectedCategory === undefined
+            ? food
+            : food.category === selectedCategory,
+      );
+      setFoods(foodsCategoriesFilter);
     }
 
     loadFoods();
@@ -90,6 +97,12 @@ const Dashboard: React.FC = () => {
 
   function handleSelectCategory(id: number): void {
     // Select / deselect category
+    if (selectedCategory === undefined) {
+      setSelectedCategory(id);
+    }
+    if (selectedCategory === id) {
+      setSelectedCategory(undefined);
+    }
   }
 
   return (
@@ -100,7 +113,7 @@ const Dashboard: React.FC = () => {
           name="log-out"
           size={24}
           color="#FFB84D"
-          onPress={() => navigation.navigate('Home')}
+          onPress={() => navigate('Home')}
         />
       </Header>
       <FilterContainer>
