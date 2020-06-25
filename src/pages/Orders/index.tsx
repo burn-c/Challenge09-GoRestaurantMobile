@@ -18,13 +18,21 @@ import {
   FoodPricing,
 } from './styles';
 
+interface Extra {
+  id: number;
+  name: string;
+  value: number;
+  quantity: number;
+}
+
 interface Food {
   id: number;
   name: string;
   description: string;
   price: number;
-  formattedValue: number;
-  thumbnail_url: string;
+  image_url: string;
+  formattedPrice: string;
+  extras: Extra[];
 }
 
 const Orders: React.FC = () => {
@@ -35,7 +43,23 @@ const Orders: React.FC = () => {
       // Load orders from API
       const { data } = await api.get('/orders');
 
-      setOrders(data);
+      const foodFormattedValue: Food[] = data.map((food: Food) => {
+        const extraTotal = food.extras.reduce(
+          (total: number, extra: { quantity: number; value: number }) => {
+            const extraValue = extra.quantity * extra.value;
+            return total + extraValue;
+          },
+          0,
+        );
+
+        const foodTotal = Number(food.price) + Number(extraTotal);
+
+        const orderTotal = formatValue(foodTotal);
+
+        return { ...food, formattedPrice: orderTotal };
+      });
+      console.log(foodFormattedValue);
+      setOrders(foodFormattedValue);
     }
 
     loadOrders();
