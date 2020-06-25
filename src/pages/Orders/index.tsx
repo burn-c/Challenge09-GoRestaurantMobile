@@ -58,7 +58,6 @@ const Orders: React.FC = () => {
 
         return { ...food, formattedPrice: orderTotal };
       });
-      console.log(foodFormattedValue);
       setOrders(foodFormattedValue);
     }
 
